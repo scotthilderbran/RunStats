@@ -30,7 +30,7 @@ $(document).on('keyup','.distancein', function () {  //reset title of dropdown f
 });
 
 
-$("#addone").click(function(){
+$("#addone").click(function(){ //Add another card for run input
     if(curr === 10){
         console.log(curr);
         $("#alerted").show();
@@ -79,7 +79,7 @@ $("#addone").click(function(){
     window.scrollTo(0,document.body.scrollHeight);
 })
 
-$("#removeone").click(function(){
+$("#removeone").click(function(){ //remove single run card
     $(`.run${curr}`).remove();
     if(count != 2){
         curr--;
@@ -87,7 +87,7 @@ $("#removeone").click(function(){
     }
 });
 
-$("#clearruns").click(function(){
+$("#clearruns").click(function(){ //clear all current run cards
     $(".run").remove();
     count = 2;
     curr = 1;
@@ -111,7 +111,7 @@ function convertAll(metric){
     }
 }
 
-function predict(curr){
+function predict(curr){ //prediction function
     let goal = parseFloat($("#dist0").val());
     let distances = [];
     let times = [];
