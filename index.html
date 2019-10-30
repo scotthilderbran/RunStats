@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>RunStats - Pace Tools</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center" id="nav">
+            <div class="col-8 mt-3 text-center">
+                <h1 class="display-4 ml-3 text-center">RunStats</h1>
+                <nav class="navbar navbar-light justify-content-center">
+                    <form class="form-inline" style="justify-content: center">
+                        <a href="index.html" class="btn btn-lg btn-outline-light mx-1 mt-2 active" role="button">Pace Tools</a>
+                        <a href="predictor.html" class="btn btn-lg btn-outline-light mx-1 mt-2" role="button">Race Predictor</a>
+                    </form>
+                </nav>
+                <div class="btn-group mt-3">
+                    <button type="button" class="btn btn-lg btn-outline-light dropdown-toggle btnwide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pace Calculator
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-8 mt-5">
+                <div class="card">
+                    <div class="card-header text-center">
+                        Input
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Total Time</span>
+                            </div>
+                            <input id="hr" type="number" aria-label="hr" class="form-control" placeholder="Hours">
+                            <input id="min" type="number" aria-label="min" class="form-control" placeholder="Minutes">
+                            <input id="sec" type="number" aria-label="sec" class="form-control" placeholder="Seconds">
+                        </div>
+                        <div class="input-group mt-1">
+                            <div class="input-group-prepend">
+                                <button id="btninput" type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Choose distance or enter custom
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" id="marathon" href="#">Marathon</a>
+                                    <a class="dropdown-item" id="hmarathon"href="#">Half Marathon</a>
+                                    <a class="dropdown-item" id="20K" href="#">20K</a>
+                                    <a class="dropdown-item" id="15K" href="#">15K</a>
+                                    <a class="dropdown-item" id="10K" href="#">10K</a>
+                                    <a class="dropdown-item" id="5K" href="#">5K</a>
+                                </div>
+                            </div>
+                            <input type="number" id="distance" class="form-control" aria-label="Text input with segmented dropdown button">
+                        </div>
+                        <div id="switch" class="lm-3 text-center mt-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" id="imperial" value="M" checked>
+                                <label class="form-check-label" for="inlineRadio1">Miles</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" id="metric" value="K">
+                                <label class="form-check-label" for="inlineRadio2">Kilometers</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header text-center">
+                            Results
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 id="result" class="card-title">Your Pace is:</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="../js/pacetools.js"></script>
+</body>
+</html>
