@@ -42,9 +42,9 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Total Time</span>
                             </div>
-                            <input id="hr" type="number" aria-label="hr" class="form-control" placeholder="Hours">
-                            <input id="min" type="number" aria-label="min" class="form-control" placeholder="Minutes">
-                            <input id="sec" type="number" aria-label="sec" class="form-control" placeholder="Seconds">
+                            <input id="hr" type="number" aria-label="hr" class="form-control refresh" placeholder="Hours">
+                            <input id="min" type="number" aria-label="min" class="form-control refresh" placeholder="Minutes">
+                            <input id="sec" type="number" aria-label="sec" class="form-control refresh" placeholder="Seconds">
                         </div>
                         <div class="input-group mt-1">
                             <div class="input-group-prepend">
@@ -52,15 +52,15 @@
                                 Choose distance or enter custom
                                 </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" id="marathon" href="#">Marathon</a>
-                                    <a class="dropdown-item" id="hmarathon"href="#">Half Marathon</a>
-                                    <a class="dropdown-item" id="20K" href="#">20K</a>
-                                    <a class="dropdown-item" id="15K" href="#">15K</a>
-                                    <a class="dropdown-item" id="10K" href="#">10K</a>
-                                    <a class="dropdown-item" id="5K" href="#">5K</a>
+                                    <a class="dropdown-item menuclick" id="marathon" href="#" data-value="26.219" data-valuem="42.195">Marathon</a>
+                                    <a class="dropdown-item menuclick" id="hmarathon" href="#" data-value="13.109" data-valuem="21.098">Half Marathon</a>
+                                    <a class="dropdown-item menuclick" id="20K" href="#" data-value="12.427" data-valuem="20">20K</a>
+                                    <a class="dropdown-item menuclick" id="15K" href="#" data-value="9.321" data-valuem="15">15K</a>
+                                    <a class="dropdown-item menuclick" id="10K" href="#" data-value="6.214" data-valuem="10">10K</a>
+                                    <a class="dropdown-item menuclick" id="5K" href="#" data-value="3.107" data-valuem="5">5K</a>
                                 </div>
                             </div>
-                            <input type="number" id="distance" class="form-control" aria-label="Text input with segmented dropdown button">
+                            <input type="number" id="distance" class="form-control refresh" aria-label="Text input with segmented dropdown button">
                         </div>
                         <div id="switch" class="lm-3 text-center mt-3">
                             <div class="form-check form-check-inline">

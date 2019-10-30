@@ -11,75 +11,23 @@ $('#switch input:radio').change(function() { //Switch between metric and imperia
         calcPace();
     }
   });
-//Functions to set preset distances
-$("#marathon").click(function() {
-    $("#btninput").text("Marathon");
+
+$(".menuclick").click(function(){ //Dropdown menu for preset distances
     if(metric){
-        $("#distance").val("42.195");
+        $("#distance").val($(this).data("valuem"));
     }else{
-        $("#distance").val("26.219");
+        $("#distance").val($(this).data("value"));
     }
-    calcPace();
+    $("#btninput").text($(this).text());
 });
-$("#hmarathon").click(function() {
-    $("#btninput").text("Half Marathon");
-    if(metric){
-        $("#distance").val("21.098");
-    }else{
-        $("#distance").val("13.109");
-    }
-    calcPace();
-});
-$("#20K").click(function() {
-    $("#btninput").text("20K");
-    if(metric){
-        $("#distance").val("20");
-    }else{
-        $("#distance").val("12.427");
-    }
-    calcPace();
-});
-$("#15K").click(function() {
-    $("#btninput").text("15K");
-    if(metric){
-        $("#distance").val("15");
-    }else{
-        $("#distance").val("9.321");
-    }
-    calcPace();
-});
-$("#10K").click(function() {
-    $("#btninput").text("10K");
-    if(metric){
-        $("#distance").val("10");
-    }else{
-        $("#distance").val("6.214");
-    }
-    calcPace();
-});
-$("#5K").click(function() {
-    $("#btninput").text("5K");
-    if(metric){
-        $("#distance").val("5");
-    }else{
-        $("#distance").val("3.107");
-    }
+
+$(".refresh").keyup(function(){ //Refresh pace on input change
     calcPace();
 });
 
-$("#hr").keyup(function(){
-    calcPace();
-})
-$("#min").keyup(function(){
-    calcPace();
-})
-$("#sec").keyup(function(){
-    calcPace();
-})
-$("#distance").keyup(function(){
-    $("#btninput").text("Choose preset or enter custom");
-    calcPace();
-})
+$("#distance").keyup(function(){ //Reset distance button text on custom change
+    $("#btninput").text("Choose distance or enter custom");
+});
 
 function calcPace(){ // Calculate pace
     $("#result").text("Your pace is: ");
