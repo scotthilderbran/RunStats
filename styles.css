@@ -9,34 +9,11 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.container {
-    height: 100vh;
-  }
-h1{
+
+h1, h4{
     color: white;
 }
-.nav{
-    margin: auto;
-}
-
-.centerBlock {
-    margin: auto;
-  }
 
 .btn{
     width: 300px;
 }
-.cardopacity{
-    opacity: .4;
-}
-
-.btn.bmtbtn{
-    width: 200px;
-}
-
-.btn-group {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
