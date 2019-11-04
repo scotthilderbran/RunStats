@@ -1,5 +1,5 @@
 # Stats.run <img width="40" alt="" align="center" src="https://user-images.githubusercontent.com/45612321/68164590-1b673e00-ffc2-11e9-9890-ab46ab3b9a35.png">
-[Visit Stats.run](https://www.stats.run)
+[Visit Stats.run](stats.run)
 
 This is a work in progress race time predictor. The formula is based on averaging Peter Riegel's race time formula over multiple races. The site also offers a basic pace calculator.
 
