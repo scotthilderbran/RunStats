@@ -1,7 +1,8 @@
 let count = 2;
 let curr = 1;
 let metric = false;
-$("#alerted").hide()
+
+$("#alerted").hide()//Hide alert message
 
 $('#switch input:radio').change(function() { //Switch between metric and imperial and changes current input
     if($(this).val() === 'M'){
