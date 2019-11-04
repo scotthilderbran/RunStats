@@ -1,6 +1,14 @@
-# RunStats V0.5
-Small web app with running tools such as race time predictor and pace calculator. More to come.
+# RunStats
+[Visit Run.stats](https://www.run.stats)
 
+This is a work in progress race time predictor. The formula is based on averaging Peter Riegel's race time formula over multiple races. The site also offers a basic pace calculator.
 
-<img width="1000 " alt="" align="center" src="https://user-images.githubusercontent.com/45612321/67828074-f2185f00-fb36-11e9-99d1-9450fcef6880.png">
-<img width="1000" alt="" align="center" src="https://user-images.githubusercontent.com/45612321/67828076-f5abe600-fb36-11e9-9b77-c39124353bd3.png">
+Future plans include integrating Strava's API to import the atheletes past runs automatically.
+
+___
+
+<img width="1000 " alt="" align="center" src="https://user-images.githubusercontent.com/45612321/68163963-86177a00-ffc0-11e9-9c5e-54ebfd8a0f53.png">
+<p align="center">Race time predictor</p>
+
+<img width="1000" alt="" align="center" src="https://user-images.githubusercontent.com/45612321/68163964-86177a00-ffc0-11e9-8d88-6907850c8d8f.png">
+<p align="center">Pace calculator</p>
