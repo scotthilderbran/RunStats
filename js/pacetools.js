@@ -86,10 +86,3 @@ function calcPace(){ // Calculate pace
 }
 
 const invalid = () => $("#result").text("Please enter valid input");
-
-function func(){
-    console.log("A");
-    setTimeout(console.log("B"),5000);
-    console.log("C");
-}
-func();
